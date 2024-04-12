@@ -1,0 +1,247 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.1/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "datePublished": "2024-04-12T00:21:54+00:00",
+            "hasPart": [
+                {
+                    "@id": "config/allocation.json"
+                },
+                {
+                    "@id": "config/bitcoincash/hardware.json"
+                },
+                {
+                    "@id": "config/bitcoincash/topology.json"
+                },
+                {
+                    "@id": "config/bitcoincash/topology.pdf"
+                },
+                {
+                    "@id": "config/bitcoin/hardware.json"
+                },
+                {
+                    "@id": "config/bitcoin/topology.json"
+                },
+                {
+                    "@id": "config/bitcoin/topology.pdf"
+                },
+                {
+                    "@id": "energy/bitcoincash/"
+                },
+                {
+                    "@id": "energy/bitcoin/"
+                },
+                {
+                    "@id": "scripts/bitcoincash/"
+                },
+                {
+                    "@id": "scripts/bitcoin/"
+                },
+                {
+                    "@id": "files/bitcoin/"
+                }
+            ]
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.1"
+            }
+        },
+        {
+            "@id": "https://orcid.org/0000-0002-5378-3905",
+            "@type": "Person",
+            "affiliation": {
+                "@id": "https://ror.org/02kkvpp62"
+            },
+            "email": "hauser@net.in.tum.de",
+            "name": "Eric Hauser"
+        },
+        {
+            "@id": "https://ror.org/02kkvpp62",
+            "@type": "Organization",
+            "location": "https://www.geonames.org/2867714",
+            "name": "Technical University of Munich"
+        },
+        {
+            "@id": "http://doi.org/10.1145/3485983.3494841",
+            "@type": "CreativeWork",
+            "alternateName": "pos",
+            "citation": "http://doi.org/10.1145/3485983.3494841",
+            "description": "The pos Framework: A Methodology and Toolchain for Reproducible Network Experiments",
+            "name": "Plain Orchestrating Service"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19",
+            "@type": "WebSite",
+            "name": "Acrobat PDF 1.5 - Portable Document Format"
+        },
+        {
+            "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817",
+            "@type": "WebSite",
+            "name": "JSON Data Interchange Format"
+        },
+        {
+            "@id": "config/allocation.json",
+            "@type": "File",
+            "description": "allocation details like booted images and experiment variables",
+            "encodingFormat": "application/json",
+            "name": "allocation from 2024-04-09 01:11:31.435616",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/bitcoincash/hardware.json",
+            "@type": "File",
+            "contentSize": 12611,
+            "description": "contains information about CPU, GPU, RAM, motherboard, storage, and network",
+            "encodingFormat": [
+                "application/json",
+                {
+                    "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+                }
+            ],
+            "name": "hardware of testbed node bitcoincash",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/bitcoincash/topology.json",
+            "@type": "File",
+            "contentSize": 32843,
+            "description": "contains network topology with neighboring nodes including link speed",
+            "encodingFormat": [
+                "application/json",
+                {
+                    "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+                }
+            ],
+            "name": "network topology of testbed node bitcoincash",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/bitcoincash/topology.pdf",
+            "@type": "File",
+            "contentSize": 69962,
+            "description": "contains network topology with neighboring nodes including link speed",
+            "encodingFormat": [
+                "application/pdf",
+                {
+                    "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19"
+                }
+            ],
+            "name": "network topology of testbed node bitcoincash",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/bitcoin/hardware.json",
+            "@type": "File",
+            "contentSize": 12611,
+            "description": "contains information about CPU, GPU, RAM, motherboard, storage, and network",
+            "encodingFormat": [
+                "application/json",
+                {
+                    "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+                }
+            ],
+            "name": "hardware of testbed node bitcoin",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/bitcoin/topology.json",
+            "@type": "File",
+            "contentSize": 32545,
+            "description": "contains network topology with neighboring nodes including link speed",
+            "encodingFormat": [
+                "application/json",
+                {
+                    "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/817"
+                }
+            ],
+            "name": "network topology of testbed node bitcoin",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "config/bitcoin/topology.pdf",
+            "@type": "File",
+            "contentSize": 69272,
+            "description": "contains network topology with neighboring nodes including link speed",
+            "encodingFormat": [
+                "application/pdf",
+                {
+                    "@id": "https://www.nationalarchives.gov.uk/PRONOM/fmt/19"
+                }
+            ],
+            "name": "network topology of testbed node bitcoin",
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "energy/bitcoincash/",
+            "@type": "Dataset",
+            "description": "contains detailed logs about energy consumption",
+            "name": "energy logs of testbed node bitcoincash",
+            "size": 94039,
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "energy/bitcoin/",
+            "@type": "Dataset",
+            "description": "contains detailed logs about energy consumption",
+            "name": "energy logs of testbed node bitcoin",
+            "size": 94175,
+            "subjectOf": {
+                "@id": "http://doi.org/10.1145/3485983.3494841"
+            }
+        },
+        {
+            "@id": "scripts/bitcoincash/",
+            "@type": "Dataset",
+            "author": {
+                "@id": "https://orcid.org/0000-0002-5378-3905"
+            },
+            "description": "executed scripts together with output logs",
+            "name": "scripts executed on testbed node bitcoincash",
+            "size": 85258
+        },
+        {
+            "@id": "scripts/bitcoin/",
+            "@type": "Dataset",
+            "author": {
+                "@id": "https://orcid.org/0000-0002-5378-3905"
+            },
+            "description": "executed scripts together with output logs",
+            "name": "scripts executed on testbed node bitcoin",
+            "size": 420677
+        },
+        {
+            "@id": "files/bitcoin/",
+            "@type": "Dataset",
+            "author": {
+                "@id": "https://orcid.org/0000-0002-5378-3905"
+            },
+            "description": "files uploaded during the experiment",
+            "name": "files uploaded by testbed node bitcoin",
+            "size": 403843
+        }
+    ]
+}

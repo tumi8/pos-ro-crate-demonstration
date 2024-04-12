@@ -1,0 +1,57 @@
+#!/bin/bash
+
+# measurement LoadGen: generate packets
+
+# exit on error
+set -e
+# log every command
+set -x
+
+MOONGEN_PATH=$(pos_get_variable git/moongen/path --from-global)
+PKT_RATE=$(pos_get_variable pkt_rate --from-loop)
+PKT_SIZE=$(pos_get_variable pkt_size --from-loop)
+
+LOADGEN_EGRESS_DEV=$(pos_get_variable --from-global loadgen/moongen/egress_dev)
+LOADGEN_INGRESS_DEV=$(pos_get_variable --from-global loadgen/moongen/ingress_dev)
+LOADGEN_EGRESS_MAC=$(pos_get_variable --from-global loadgen/moongen/egress_mac)
+LOADGEN_INGRESS_MAC=$(pos_get_variable --from-global loadgen/moongen/ingress_mac)
+LOADGEN_EGRESS_IP=$(pos_get_variable --from-global loadgen/moongen/egress_ip)
+LOADGEN_INGRESS_IP=$(pos_get_variable --from-global loadgen/moongen/ingress_ip)
+LOADGEN_ENABLE_IP_SW_CHKSUM_CALC=$(pos_get_variable --from-global loadgen/moongen/enable_ip_sw_chksum_calc)
+LOADGEN_ENABLE_OFFLOAD=$(pos_get_variable --from-global loadgen/moongen/enable_offload)
+LOADGEN_WARM_UP=$(pos_get_variable --from-global loadgen/moongen/warm_up)
+
+DUT_INGRESS_MAC=$(pos_get_variable --from-global dut/linux_router/ingress_mac)
+DUT_EGRESS_MAC=$(pos_get_variable --from-global dut/linux_router/egress_mac)
+DUT_INGRESS_IP=$(pos_get_variable --from-global dut/linux_router/ingress_ip)
+DUT_EGRESS_IP=$(pos_get_variable --from-global dut/linux_router/egress_ip)
+
+PKTS_TOTAL=$(($PKT_RATE*30))
+
+echo "send packets with size: $PKT_SZ and rate: $PKT_RATE."
+
+pos_sync --tag "start_energy"
+sleep 20
+
+pos_energy_start --loop --filename "measurement"
+
+pos_sync --tag "start_measurement"
+
+pos_run --blocking --loop loadgen -- bash -c "$MOONGEN_PATH/build/MoonGen \
+    $MOONGEN_PATH/examples/soft-gen.lua --src-mac $LOADGEN_EGRESS_MAC \
+    --dst-mac $DUT_INGRESS_MAC --src-ip $LOADGEN_EGRESS_IP \
+    --dst-ip $LOADGEN_INGRESS_IP --fix-packetrate $PKT_RATE --size $PKT_SIZE \
+    --packets $PKTS_TOTAL --chksum-offload $LOADGEN_ENABLE_OFFLOAD \
+    --ip-chksum $LOADGEN_ENABLE_IP_SW_CHKSUM_CALC --warm-up $LOADGEN_WARM_UP \
+    $LOADGEN_EGRESS_DEV $LOADGEN_INGRESS_DEV > /root/throughput.txt"
+
+pos_sync --tag "finish_measurement"
+
+sleep 20
+pos_energy_stop
+
+pos_sync --tag "stop_energy"
+
+pos_upload --loop /root/throughput.txt
+
+echo "measurement run completed successfully"

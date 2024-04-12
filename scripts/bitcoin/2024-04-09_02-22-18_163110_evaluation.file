@@ -1,0 +1,31 @@
+#!/bin/bash
+
+# evaluate measurements
+
+# exit on error
+set -e
+# log every command
+set -x
+
+LOADGEN=$(pos_get_variable --from-global nodes/loadgen/name)
+
+apt update
+apt install --yes python3-dev
+
+cd plot_scripts
+git pull
+
+source .venv3/bin/activate
+pip3 install -r requirements.txt
+
+python3 plot_throughput.py "" "/root/experiment-results/$LOADGEN" \
+    --name "throughput" --label "throughput" \
+    --throughput-filename 'throughput_run*.txt' --throughput-strip "2" \
+    --metric "avg_mpps" --no-default-plots \
+    --loop-file '*_measurement_run*.loop' --loop-x-axis "pkt_rate"
+
+make
+
+pos_upload "figures/throughput_all_in_one-loop_avg_mpps.pdf" --outfile "throughput.pdf"
+
+echo "evaluation completed successfully"

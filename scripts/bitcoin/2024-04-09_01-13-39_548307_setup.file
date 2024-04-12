@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# setup LoadGen: install MoonGen
+
+# exit on error
+set -e
+# log every command
+set -x
+
+MOONGEN_REPO_URL=$(pos_get_variable git/moongen/url --from-global)
+MOONGEN_REPO_PATH=$(pos_get_variable git/moongen/path --from-global)
+MOONGEN_REPO_COMMIT=$(pos_get_variable git/moongen/commit --from-global)
+
+# install MoonGen
+git clone "$MOONGEN_REPO_URL" "$MOONGEN_REPO_PATH"
+cd "$MOONGEN_REPO_PATH"
+git checkout "$MOONGEN_REPO_COMMIT"
+./build.sh
+./bind-interfaces.sh
+./setup-hugetlbfs.sh
+
+# sync with DuT
+pos_sync --tag "setup_done"

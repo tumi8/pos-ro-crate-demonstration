@@ -1,0 +1,99 @@
+{
+    "id": "erhauser_240409_011131_435037",
+    "created": "2024-04-09 01:11:31.435616",
+    "updated": "2024-04-09 01:13:38.805291",
+    "owner": "erhauser",
+    "result_folder": "erhauser/default/2024-04-09_01-11-31_435037",
+    "variables": {
+        "loop": {
+            "pkt_rate": [
+                100000,
+                200000,
+                300000,
+                400000,
+                500000,
+                600000,
+                700000,
+                800000,
+                900000,
+                1000000,
+                1100000,
+                1200000,
+                1300000,
+                1400000,
+                1500000,
+                1600000,
+                1700000,
+                1800000,
+                1900000,
+                2000000
+            ],
+            "pkt_size": [
+                64,
+                1500
+            ]
+        },
+        "global": {
+            "dut": {
+                "linux_router": {
+                    "egress_if": "eno8",
+                    "egress_ip": "10.0.1.22",
+                    "egress_mac": "52:54:00:00:01:22",
+                    "ingress_if": "eno7",
+                    "ingress_ip": "10.0.0.21",
+                    "ingress_mac": "52:54:00:00:00:21"
+                }
+            },
+            "git": {
+                "moongen": {
+                    "url": "https://github.com/gallenmu/MoonGen.git",
+                    "path": "/root/moongen",
+                    "commit": "21641c9c3432fa8a5f93b135cf38b5247750d0a0"
+                }
+            },
+            "nodes": {
+                "dut": {
+                    "name": "bitcoincash",
+                    "image": "debian-buster"
+                },
+                "loadgen": {
+                    "name": "bitcoin",
+                    "image": "debian-buster"
+                }
+            },
+            "loadgen": {
+                "moongen": {
+                    "warm_up": "0",
+                    "egress_if": "eno7",
+                    "egress_ip": "10.0.0.20",
+                    "egress_dev": "0",
+                    "egress_mac": "52:54:00:00:00:20",
+                    "ingress_if": "eno8",
+                    "ingress_ip": "10.0.1.23",
+                    "ingress_dev": "1",
+                    "ingress_mac": "52:54:00:00:01:23",
+                    "enable_offload": "0",
+                    "enable_ip_sw_chksum_calc": "1"
+                }
+            }
+        },
+        "bitcoin": {},
+        "bitcoincash": {}
+    },
+    "bootparameters": {
+        "bitcoin": {},
+        "bitcoincash": {}
+    },
+    "bootstrapped": {
+        "bitcoin": true,
+        "bitcoincash": true
+    },
+    "nodes": [
+        "bitcoincash",
+        "bitcoin"
+    ],
+    "image": {
+        "bitcoincash": "default/debian-buster",
+        "bitcoin": "default/debian-bullseye-evaluator"
+    }
+}

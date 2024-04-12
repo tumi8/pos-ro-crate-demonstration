@@ -1,0 +1,790 @@
+{
+    "bitcoincash.blockchain.net.in.tum.de": {
+        "bitcoingold.blockchain.net.in.tum.de": [
+            {
+                "inf_a": "eno2",
+                "inf_b": "eno2",
+                "mac_a": "ac:1f:6b:7c:86:4f",
+                "mac_b": "ac:1f:6b:7c:7f:8f",
+                "type": "link",
+                "properties": {
+                    "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                    "device_b": "server"
+                }
+            },
+            {
+                "inf_a": "eno4",
+                "inf_b": "eno3",
+                "mac_a": "ac:1f:6b:7c:86:51",
+                "mac_b": "ac:1f:6b:7c:7f:90",
+                "type": "link",
+                "properties": {
+                    "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                    "device_b": "server"
+                }
+            },
+            {
+                "inf_a": "eno5",
+                "inf_b": "eno5",
+                "mac_a": "ac:1f:6b:7c:86:52",
+                "mac_b": "ac:1f:6b:7c:7f:92",
+                "type": "switch_link",
+                "properties": {
+                    "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                    "device_b": "server",
+                    "other_endpoints": [
+                        {
+                            "fqdn": "bitcoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:4e"
+                        },
+                        {
+                            "fqdn": "dogecoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:85:56"
+                        },
+                        {
+                            "fqdn": "dogecoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:6c"
+                        },
+                        {
+                            "fqdn": "kraken",
+                            "inf": "bridge/ether17",
+                            "mac": null
+                        },
+                        {
+                            "fqdn": "amdexp1.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:f9"
+                        },
+                        {
+                            "fqdn": "amdexp0.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:8f"
+                        },
+                        {
+                            "fqdn": "dogecoincash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:87:b4"
+                        },
+                        {
+                            "fqdn": "ether.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:04"
+                        },
+                        {
+                            "fqdn": "ethergold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:88"
+                        },
+                        {
+                            "fqdn": "ethercash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7a:71:ce"
+                        }
+                    ]
+                }
+            }
+        ],
+        "bitcoin.blockchain.net.in.tum.de": [
+            {
+                "inf_a": "eno3",
+                "inf_b": "eno4",
+                "mac_a": "ac:1f:6b:7c:86:50",
+                "mac_b": "ac:1f:6b:7c:7e:4d",
+                "type": "link",
+                "properties": {
+                    "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                    "device_b": "server"
+                }
+            },
+            {
+                "inf_a": "eno5",
+                "inf_b": "eno5",
+                "mac_a": "ac:1f:6b:7c:86:52",
+                "mac_b": "ac:1f:6b:7c:7e:4e",
+                "type": "switch_link",
+                "properties": {
+                    "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                    "device_b": "server",
+                    "other_endpoints": [
+                        {
+                            "fqdn": "bitcoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7f:92"
+                        },
+                        {
+                            "fqdn": "dogecoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:85:56"
+                        },
+                        {
+                            "fqdn": "dogecoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:6c"
+                        },
+                        {
+                            "fqdn": "kraken",
+                            "inf": "bridge/ether17",
+                            "mac": null
+                        },
+                        {
+                            "fqdn": "amdexp1.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:f9"
+                        },
+                        {
+                            "fqdn": "amdexp0.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:8f"
+                        },
+                        {
+                            "fqdn": "dogecoincash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:87:b4"
+                        },
+                        {
+                            "fqdn": "ether.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:04"
+                        },
+                        {
+                            "fqdn": "ethergold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:88"
+                        },
+                        {
+                            "fqdn": "ethercash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7a:71:ce"
+                        }
+                    ]
+                }
+            },
+            {
+                "inf_a": "eno7",
+                "inf_b": "eno7",
+                "mac_a": "ac:1f:6b:7c:8b:0e",
+                "mac_b": "ac:1f:6b:7c:88:62",
+                "type": "splitter_link",
+                "properties": {
+                    "speed": "10GigBaseLR - R fiber over 1310 nm optics",
+                    "device_b": "server",
+                    "endpoint": "transmitter",
+                    "sniffer": [
+                        {
+                            "fqdn": "bitcoingold.blockchain.net.in.tum.de",
+                            "inf": "eno7",
+                            "mac": "ac:1f:6b:7c:88:ce"
+                        }
+                    ]
+                }
+            },
+            {
+                "inf_a": "eno8",
+                "inf_b": "eno8",
+                "mac_a": "ac:1f:6b:7c:8b:0f",
+                "mac_b": "ac:1f:6b:7c:88:63",
+                "type": "splitter_link",
+                "properties": {
+                    "speed": "10GigBaseLR - R fiber over 1310 nm optics",
+                    "device_b": "server",
+                    "endpoint": "receiver",
+                    "sniffer": [
+                        {
+                            "fqdn": "bitcoingold.blockchain.net.in.tum.de",
+                            "inf": "eno8",
+                            "mac": "ac:1f:6b:7c:88:cf"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dogecoin.blockchain.net.in.tum.de": [
+            {
+                "inf_a": "eno5",
+                "inf_b": "eno5",
+                "mac_a": "ac:1f:6b:7c:86:52",
+                "mac_b": "ac:1f:6b:7c:85:56",
+                "type": "switch_link",
+                "properties": {
+                    "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                    "device_b": "server",
+                    "other_endpoints": [
+                        {
+                            "fqdn": "bitcoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7f:92"
+                        },
+                        {
+                            "fqdn": "bitcoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:4e"
+                        },
+                        {
+                            "fqdn": "dogecoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:6c"
+                        },
+                        {
+                            "fqdn": "kraken",
+                            "inf": "bridge/ether17",
+                            "mac": null
+                        },
+                        {
+                            "fqdn": "amdexp1.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:f9"
+                        },
+                        {
+                            "fqdn": "amdexp0.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:8f"
+                        },
+                        {
+                            "fqdn": "dogecoincash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:87:b4"
+                        },
+                        {
+                            "fqdn": "ether.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:04"
+                        },
+                        {
+                            "fqdn": "ethergold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:88"
+                        },
+                        {
+                            "fqdn": "ethercash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7a:71:ce"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dogecoingold.blockchain.net.in.tum.de": [
+            {
+                "inf_a": "eno5",
+                "inf_b": "eno5",
+                "mac_a": "ac:1f:6b:7c:86:52",
+                "mac_b": "ac:1f:6b:7c:7e:6c",
+                "type": "switch_link",
+                "properties": {
+                    "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                    "device_b": "server",
+                    "other_endpoints": [
+                        {
+                            "fqdn": "bitcoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7f:92"
+                        },
+                        {
+                            "fqdn": "bitcoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:4e"
+                        },
+                        {
+                            "fqdn": "dogecoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:85:56"
+                        },
+                        {
+                            "fqdn": "kraken",
+                            "inf": "bridge/ether17",
+                            "mac": null
+                        },
+                        {
+                            "fqdn": "amdexp1.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:f9"
+                        },
+                        {
+                            "fqdn": "amdexp0.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:8f"
+                        },
+                        {
+                            "fqdn": "dogecoincash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:87:b4"
+                        },
+                        {
+                            "fqdn": "ether.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:04"
+                        },
+                        {
+                            "fqdn": "ethergold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:88"
+                        },
+                        {
+                            "fqdn": "ethercash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7a:71:ce"
+                        }
+                    ]
+                }
+            }
+        ],
+        "kraken": [
+            {
+                "inf_a": "eno5",
+                "inf_b": "bridge/ether17",
+                "mac_a": "ac:1f:6b:7c:86:52",
+                "mac_b": null,
+                "type": "switch_link",
+                "properties": {
+                    "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                    "device_b": "switch",
+                    "other_endpoints": [
+                        {
+                            "fqdn": "bitcoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7f:92"
+                        },
+                        {
+                            "fqdn": "bitcoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:4e"
+                        },
+                        {
+                            "fqdn": "dogecoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:85:56"
+                        },
+                        {
+                            "fqdn": "dogecoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:6c"
+                        },
+                        {
+                            "fqdn": "amdexp1.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:f9"
+                        },
+                        {
+                            "fqdn": "amdexp0.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:8f"
+                        },
+                        {
+                            "fqdn": "dogecoincash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:87:b4"
+                        },
+                        {
+                            "fqdn": "ether.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:04"
+                        },
+                        {
+                            "fqdn": "ethergold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:88"
+                        },
+                        {
+                            "fqdn": "ethercash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7a:71:ce"
+                        }
+                    ]
+                }
+            }
+        ],
+        "amdexp1.blockchain.net.in.tum.de": [
+            {
+                "inf_a": "eno5",
+                "inf_b": "eno2",
+                "mac_a": "ac:1f:6b:7c:86:52",
+                "mac_b": "ac:1f:6b:ad:01:f9",
+                "type": "switch_link",
+                "properties": {
+                    "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                    "device_b": "server",
+                    "other_endpoints": [
+                        {
+                            "fqdn": "bitcoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7f:92"
+                        },
+                        {
+                            "fqdn": "bitcoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:4e"
+                        },
+                        {
+                            "fqdn": "dogecoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:85:56"
+                        },
+                        {
+                            "fqdn": "dogecoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:6c"
+                        },
+                        {
+                            "fqdn": "kraken",
+                            "inf": "bridge/ether17",
+                            "mac": null
+                        },
+                        {
+                            "fqdn": "amdexp0.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:8f"
+                        },
+                        {
+                            "fqdn": "dogecoincash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:87:b4"
+                        },
+                        {
+                            "fqdn": "ether.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:04"
+                        },
+                        {
+                            "fqdn": "ethergold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:88"
+                        },
+                        {
+                            "fqdn": "ethercash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7a:71:ce"
+                        }
+                    ]
+                }
+            }
+        ],
+        "amdexp0.blockchain.net.in.tum.de": [
+            {
+                "inf_a": "eno5",
+                "inf_b": "eno2",
+                "mac_a": "ac:1f:6b:7c:86:52",
+                "mac_b": "ac:1f:6b:ad:01:8f",
+                "type": "switch_link",
+                "properties": {
+                    "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                    "device_b": "server",
+                    "other_endpoints": [
+                        {
+                            "fqdn": "bitcoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7f:92"
+                        },
+                        {
+                            "fqdn": "bitcoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:4e"
+                        },
+                        {
+                            "fqdn": "dogecoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:85:56"
+                        },
+                        {
+                            "fqdn": "dogecoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:6c"
+                        },
+                        {
+                            "fqdn": "kraken",
+                            "inf": "bridge/ether17",
+                            "mac": null
+                        },
+                        {
+                            "fqdn": "amdexp1.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:f9"
+                        },
+                        {
+                            "fqdn": "dogecoincash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:87:b4"
+                        },
+                        {
+                            "fqdn": "ether.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:04"
+                        },
+                        {
+                            "fqdn": "ethergold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:88"
+                        },
+                        {
+                            "fqdn": "ethercash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7a:71:ce"
+                        }
+                    ]
+                }
+            }
+        ],
+        "dogecoincash.blockchain.net.in.tum.de": [
+            {
+                "inf_a": "eno5",
+                "inf_b": "eno5",
+                "mac_a": "ac:1f:6b:7c:86:52",
+                "mac_b": "ac:1f:6b:7c:87:b4",
+                "type": "switch_link",
+                "properties": {
+                    "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                    "device_b": "server",
+                    "other_endpoints": [
+                        {
+                            "fqdn": "bitcoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7f:92"
+                        },
+                        {
+                            "fqdn": "bitcoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:4e"
+                        },
+                        {
+                            "fqdn": "dogecoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:85:56"
+                        },
+                        {
+                            "fqdn": "dogecoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:6c"
+                        },
+                        {
+                            "fqdn": "kraken",
+                            "inf": "bridge/ether17",
+                            "mac": null
+                        },
+                        {
+                            "fqdn": "amdexp1.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:f9"
+                        },
+                        {
+                            "fqdn": "amdexp0.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:8f"
+                        },
+                        {
+                            "fqdn": "ether.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:04"
+                        },
+                        {
+                            "fqdn": "ethergold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:88"
+                        },
+                        {
+                            "fqdn": "ethercash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7a:71:ce"
+                        }
+                    ]
+                }
+            }
+        ],
+        "ether.blockchain.net.in.tum.de": [
+            {
+                "inf_a": "eno5",
+                "inf_b": "eno5",
+                "mac_a": "ac:1f:6b:7c:86:52",
+                "mac_b": "ac:1f:6b:7c:80:04",
+                "type": "switch_link",
+                "properties": {
+                    "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                    "device_b": "server",
+                    "other_endpoints": [
+                        {
+                            "fqdn": "bitcoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7f:92"
+                        },
+                        {
+                            "fqdn": "bitcoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:4e"
+                        },
+                        {
+                            "fqdn": "dogecoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:85:56"
+                        },
+                        {
+                            "fqdn": "dogecoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:6c"
+                        },
+                        {
+                            "fqdn": "kraken",
+                            "inf": "bridge/ether17",
+                            "mac": null
+                        },
+                        {
+                            "fqdn": "amdexp1.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:f9"
+                        },
+                        {
+                            "fqdn": "amdexp0.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:8f"
+                        },
+                        {
+                            "fqdn": "dogecoincash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:87:b4"
+                        },
+                        {
+                            "fqdn": "ethergold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:88"
+                        },
+                        {
+                            "fqdn": "ethercash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7a:71:ce"
+                        }
+                    ]
+                }
+            }
+        ],
+        "ethergold.blockchain.net.in.tum.de": [
+            {
+                "inf_a": "eno5",
+                "inf_b": "eno5",
+                "mac_a": "ac:1f:6b:7c:86:52",
+                "mac_b": "ac:1f:6b:7c:80:88",
+                "type": "switch_link",
+                "properties": {
+                    "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                    "device_b": "server",
+                    "other_endpoints": [
+                        {
+                            "fqdn": "bitcoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7f:92"
+                        },
+                        {
+                            "fqdn": "bitcoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:4e"
+                        },
+                        {
+                            "fqdn": "dogecoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:85:56"
+                        },
+                        {
+                            "fqdn": "dogecoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:6c"
+                        },
+                        {
+                            "fqdn": "kraken",
+                            "inf": "bridge/ether17",
+                            "mac": null
+                        },
+                        {
+                            "fqdn": "amdexp1.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:f9"
+                        },
+                        {
+                            "fqdn": "amdexp0.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:8f"
+                        },
+                        {
+                            "fqdn": "dogecoincash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:87:b4"
+                        },
+                        {
+                            "fqdn": "ether.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:04"
+                        },
+                        {
+                            "fqdn": "ethercash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7a:71:ce"
+                        }
+                    ]
+                }
+            }
+        ],
+        "ethercash.blockchain.net.in.tum.de": [
+            {
+                "inf_a": "eno5",
+                "inf_b": "eno5",
+                "mac_a": "ac:1f:6b:7c:86:52",
+                "mac_b": "ac:1f:6b:7a:71:ce",
+                "type": "switch_link",
+                "properties": {
+                    "speed": "1000BaseTFD - Four-pair Category 5 UTP, full duplex mode",
+                    "device_b": "server",
+                    "other_endpoints": [
+                        {
+                            "fqdn": "bitcoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7f:92"
+                        },
+                        {
+                            "fqdn": "bitcoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:4e"
+                        },
+                        {
+                            "fqdn": "dogecoin.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:85:56"
+                        },
+                        {
+                            "fqdn": "dogecoingold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:7e:6c"
+                        },
+                        {
+                            "fqdn": "kraken",
+                            "inf": "bridge/ether17",
+                            "mac": null
+                        },
+                        {
+                            "fqdn": "amdexp1.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:f9"
+                        },
+                        {
+                            "fqdn": "amdexp0.blockchain.net.in.tum.de",
+                            "inf": "eno2",
+                            "mac": "ac:1f:6b:ad:01:8f"
+                        },
+                        {
+                            "fqdn": "dogecoincash.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:87:b4"
+                        },
+                        {
+                            "fqdn": "ether.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:04"
+                        },
+                        {
+                            "fqdn": "ethergold.blockchain.net.in.tum.de",
+                            "inf": "eno5",
+                            "mac": "ac:1f:6b:7c:80:88"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+}

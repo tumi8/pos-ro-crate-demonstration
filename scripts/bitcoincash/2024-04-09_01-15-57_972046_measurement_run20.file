@@ -1,0 +1,29 @@
+#!/bin/bash
+
+# measurement DuT: forward packets
+
+# exit on error
+set -e
+# log every command
+set -x
+
+PKT_RATE=$(pos_get_variable pkt_rate --from-loop)
+PKT_SIZE=$(pos_get_variable pkt_size --from-loop)
+
+echo "forward packets with size: $PKT_SIZE and rate: $PKT_RATE."
+
+pos_sync --tag "start_energy"
+
+pos_energy_start --loop --filename "measurement"
+
+pos_sync --tag "start_measurement"
+
+sleep 1
+
+pos_sync --tag "finish_measurement"
+
+pos_energy_stop
+
+pos_sync --tag "stop_energy"
+
+echo "measurement run completed successfully"
